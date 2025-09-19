@@ -1,0 +1,104 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  transition: background-image 1s ease-in-out; /* smooth change */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+
+
+.app {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  padding: 20px;
+  width: 350px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  margin: 4px 0 16px;
+  font-size: 14px;
+}
+
+.weather-card .temperature h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.weather-card .temperature p {
+  font-size: 18px;
+  margin: 4px 0 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.details span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.forecast-day {
+  flex: 1;
+  padding: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin: 0 4px;
+  font-size: 12px;
+}
+
+#toggleCalendar {
+  background: #fff;
+  color: #4b6cff;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calendar {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  font-size: 12px;
+}
+
+.calendar .day {
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 6px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calendar.hidden {
+  display: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App with Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h2 id="location">Location</h2>
+      <p id="date"></p>
+    </header>
+
+    <main class="weather-card">
+      <div class="temperature">
+        <h1 id="temp">--°</h1>
+        <p id="condition">---</p>
+      </div>
+
+      <div class="details">
+        <div><span id="rain">--%</span><br/>💧 Rain</div>
+        <div><span id="humidity">--%</span><br/>💦 Humidity</div>
+        <div><span id="wind">-- km/h</span><br/>🌬️ Wind</div>
+      </div>
+
+      <div class="forecast" id="forecast"></div>
+
+      <button id="toggleCalendar">📅 Show Calendar</button>
+      <div id="calendar" class="calendar hidden"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
